@@ -1,0 +1,6 @@
+include README.md
+include requirements.txt
+recursive-include src/cmsplugin_slick_gallery/static *
+recursive-include src/cmsplugin_slick_gallery/templates *
+recursive-include src/cmsplugin_slick_gallery/locale *
+recursive-include src/cmsplugin_slick_gallery/migrations *

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Creator: CorelDRAW -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xml:space="preserve"
+   width="597.84302"
+   height="1536.001"
+   style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+   viewBox="0 0 597.84302 1536.001"
+   version="1.1"
+   id="svg13"
+   sodipodi:docname="2290-arrow-right.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"><metadata
+   id="metadata17"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="2493"
+   inkscape:window-height="1385"
+   id="namedview15"
+   showgrid="false"
+   inkscape:zoom="0.4609375"
+   inkscape:cx="1645.3912"
+   inkscape:cy="885.16616"
+   inkscape:window-x="1987"
+   inkscape:window-y="27"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Layer_x0020_1" />
+ <defs
+   id="defs4">
+  <style
+   type="text/css"
+   id="style2">
+   <![CDATA[
+    .fil0 {fill:none}
+    .fil1 {fill:#ffffff;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g
+   id="Layer_x0020_1"
+   transform="scale(0.29191553,0.75000049)">
+  <metadata
+   id="CorelCorpID_0Corel-Layer" />
+  <g
+   id="_201429264">
+   <rect
+   id="_201429768"
+   class="fil0"
+   width="2048"
+   height="2048"
+   x="0"
+   y="0"
+   style="fill:none" />
+   <rect
+   id="_201430200"
+   class="fil0"
+   x="255.99899"
+   y="255.99899"
+   width="1536"
+   height="1536"
+   style="fill:none" />
+  </g>
+  <polygon
+   class="fil1"
+   points="1322.92,1024 1310.06,1005.94 775.854,255.999 725.077,292.128 1246.41,1024 725.077,1755.87 775.854,1792 1310.06,1042.06 "
+   id="polygon10"
+   style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero"
+   transform="matrix(3.4256485,0,0,1.3333325,-2483.8589,-341.33177)" />
+ </g>
+</svg>

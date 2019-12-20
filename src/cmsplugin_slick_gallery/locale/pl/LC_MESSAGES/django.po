@@ -1,0 +1,167 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-16 11:44+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n"
+"%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n"
+"%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+#: src/cmsplugin_slick_gallery/cms_plugins.py:9
+#: src/cmsplugin_slick_gallery/models.py:42
+#: src/cmsplugin_slick_gallery/models.py:43
+#: src/cmsplugin_slick_gallery/models.py:46
+msgid "Slick gallery"
+msgstr "Galeria Slick"
+
+#: src/cmsplugin_slick_gallery/models.py:11
+msgid "Gallery name"
+msgstr "Nazwa galerii"
+
+#: src/cmsplugin_slick_gallery/models.py:13
+msgid "pixels (px)"
+msgstr "piksele (px)"
+
+#: src/cmsplugin_slick_gallery/models.py:14
+msgid "percent (%)"
+msgstr "procenty (%)"
+
+#: src/cmsplugin_slick_gallery/models.py:15
+msgid "relative to font size (em)"
+msgstr "relatywne do rozmiaru czcionki (em)"
+
+#: src/cmsplugin_slick_gallery/models.py:17
+msgid "width"
+msgstr "szerokość"
+
+#: src/cmsplugin_slick_gallery/models.py:18
+msgid "width units"
+msgstr "jednostki szerokości"
+
+#: src/cmsplugin_slick_gallery/models.py:19
+msgid "height"
+msgstr "wysokość"
+
+#: src/cmsplugin_slick_gallery/models.py:20
+msgid "height units"
+msgstr "jednostki wysokości"
+
+#: src/cmsplugin_slick_gallery/models.py:21
+msgid "Thumbnail configuration"
+msgstr "Konfiguracja miniatury"
+
+#: src/cmsplugin_slick_gallery/models.py:24
+msgid "Autoplay"
+msgstr "Automatyczne odtwarzanie"
+
+#: src/cmsplugin_slick_gallery/models.py:24
+msgid "Autoplays after the page loads"
+msgstr "Automatycznie odtwarzaj po załadowaniu strony"
+
+#: src/cmsplugin_slick_gallery/models.py:25
+msgid "Autoplay speed"
+msgstr "Prędkość autoodtwarzania"
+
+#: src/cmsplugin_slick_gallery/models.py:25
+msgid "(in miliseconds)"
+msgstr "(w milisekundach)"
+
+#: src/cmsplugin_slick_gallery/models.py:26
+msgid "Arrows"
+msgstr "Strzałki"
+
+#: src/cmsplugin_slick_gallery/models.py:26
+msgid "Enable previous/next arrows"
+msgstr "Aktywuj strzałki do poprzedniego/następnego slajdu"
+
+#: src/cmsplugin_slick_gallery/models.py:27
+msgid "Dots"
+msgstr "Kropki"
+
+#: src/cmsplugin_slick_gallery/models.py:27
+msgid "Enable dot indicators"
+msgstr "Aktywuj listę slajdów jako kropki"
+
+#: src/cmsplugin_slick_gallery/models.py:28
+msgid "Draggable"
+msgstr "Przeciąganie"
+
+#: src/cmsplugin_slick_gallery/models.py:28
+msgid "Enable mouse dragging"
+msgstr "Aktywuj przeciąganie myszką"
+
+#: src/cmsplugin_slick_gallery/models.py:29
+msgid "Fade"
+msgstr ""
+
+#: src/cmsplugin_slick_gallery/models.py:29
+msgid "Enable fading"
+msgstr "Aktywuj fading"
+
+#: src/cmsplugin_slick_gallery/models.py:30
+msgid "Infinite"
+msgstr "Nieskończone"
+
+#: src/cmsplugin_slick_gallery/models.py:30
+msgid "Enable infinite loop sliding"
+msgstr "Aktywuj nieskończone przewijanie slajdów"
+
+#: src/cmsplugin_slick_gallery/models.py:31
+msgid "Initial slide"
+msgstr "Począdkowy slajd"
+
+#: src/cmsplugin_slick_gallery/models.py:31
+msgid "Number of the slide to start on (counting from 0)"
+msgstr "Numer slajdu od którego zacznie galeria (licząc od 0)"
+
+#: src/cmsplugin_slick_gallery/models.py:32
+msgid "Pause on hover/focus"
+msgstr "Pauza poprzez najechanie/skupienie"
+
+#: src/cmsplugin_slick_gallery/models.py:32
+msgid "Pause when the gallery is hovered over or focused on"
+msgstr "Pauzuj kiedy na galerię najedzie kursor"
+
+#: src/cmsplugin_slick_gallery/models.py:47
+msgid "Image"
+msgstr "Obrazek"
+
+#: src/cmsplugin_slick_gallery/models.py:48
+msgid "Slide text content"
+msgstr "Tekst zawartości slajdu"
+
+#: src/cmsplugin_slick_gallery/models.py:49
+msgid "Alternative image url"
+msgstr "Alternatywny url obrazka"
+
+#: src/cmsplugin_slick_gallery/models.py:50
+msgid "alt text"
+msgstr "alternatywy tekst"
+
+#: src/cmsplugin_slick_gallery/models.py:53
+msgid "Gallery image"
+msgstr "Obrazek galerii"
+
+#: src/cmsplugin_slick_gallery/models.py:54
+msgid "Gallery images"
+msgstr "Obrazki galerii"
+
+#: src/cmsplugin_slick_gallery/models.py:58
+msgid "Choose a gallery"
+msgstr "Wybierz galerię"
+
+#: src/cmsplugin_slick_gallery/models.py:61
+msgid "Slick gallery add-on"
+msgstr "Dodatek galerii slick"

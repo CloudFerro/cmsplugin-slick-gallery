@@ -1,0 +1,88 @@
+
+{% load cms_tags sekizai_tags static thumbnail %}
+<section class="carousel" id="slick-carousel-{{ instance.id }}" style="width:{% if instance.gallery.thumbnail_option %}{{ instance.gallery.thumbnail_option.width }}px{% else %}{{ instance.gallery.width }}{{ instance.gallery.width_units }}{% endif %}; 
+                                                                    height:{% if instance.gallery.thumbnail_option %}{{ instance.gallery.thumbnail_option.height }}px{% else %}{{ instance.gallery.height }}{{ instance.gallery.height_units }}{% endif %};">
+    {% if instance.gallery.arrows %}<img class="carousel-left" id="slick-carousel-left-{{ instance.id }}" src="{% static 'cmsplugin_slick_gallery/icons/2289-arrow-left.svg' %}" alt="Carousel left"/>{% endif %}
+    <div class="carousel-items" id="slick-carousel-items-{{ instance.id }}">
+        {% for i in instance.gallery.galleryimage_set.all %}
+            {% if i.image or i.alternative_url %}
+                {% if i.thumbnail_option %}
+                    {% if i.thumbnail_option.upscale %}
+                        {% if i.thumbnail_option.crop %}
+                            {% thumbnail i size upscale crop as thumb %}
+                        {% else %}
+                            {% thumbnail i size upscale as thumb %}
+                        {% endif %}
+                    {% else %}
+                        {% thumbnail i size crop as thumb %}
+                    {% endif %}	
+                    <div>
+                        <img src="{{ thumb.url }}" alt="Carousel-img"/>
+                        <div class="wrapper carousel-desc flex-wrapper vertical justify-center" style="top: {{ i.text_transform_top }}%; left: {{ i.text_transform_left }}%;">
+                            {% if i.text %}{{ i.text }}{% endif %}
+                        </div>
+                    </div>
+                {% else %}
+                <div>
+                    <img src="{% if i.image %}{{ i.image.url }}{% else %}{{ i.alternative_url }}{% endif %}" alt="Carousel-img"/>
+                    <div class="wrapper carousel-desc flex-wrapper vertical justify-center" style="top: {{ i.text_transform_top }}%; left: {{ i.text_transform_left }}%;">
+                        {% if i.text %}{{ i.text }}{% endif %}
+                    </div>
+                </div>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+        {% for i in instance.gallery.folder_images %}
+            {% if i %}
+                {% if i.thumbnail_option %}
+                    {% if i.thumbnail_option.upscale %}
+                        {% if i.thumbnail_option.crop %}
+                            {% thumbnail i size upscale crop as thumb %}
+                        {% else %}
+                            {% thumbnail i size upscale as thumb %}
+                        {% endif %}
+                    {% else %}
+                        {% thumbnail i size crop as thumb %}
+                    {% endif %}	
+                    <div>
+                        <img src="{{ thumb.url }}" alt="Carousel-img"/>
+                        <div class="wrapper carousel-desc flex-wrapper vertical justify-center" style="top: {{ i.text_transform_top }}%; left: {{ i.text_transform_left }}%;"></div>
+                    </div>
+                {% else %}
+                <div>
+                    <img src="{{ i.url }}" alt="Carousel-img"/>
+                    <div class="wrapper carousel-desc flex-wrapper vertical justify-center" style="top: {{ i.text_transform_top }}%; left: {{ i.text_transform_left }}%;"></div>
+                </div>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    </div>
+    {% if instance.gallery.arrows %}<img id="slick-carousel-right-{{ instance.id }}" class="carousel-right" src="{% static 'cmsplugin_slick_gallery/icons/2290-arrow-right.svg' %}" alt="Carousel right"/>{% endif %}
+</section>
+
+{% addtoblock "css" %}
+<link rel="stylesheet" type="text/css" href="{% static 'cmsplugin_slick_gallery/css/slick_gallery.css' %}">
+{% endaddtoblock %}
+
+{% addtoblock "js"  %}
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(() => {
+        $('#slick-carousel-items-{{ instance.id }}').slick({
+            {% if instance.gallery.arrows %}
+            'prevArrow': $('#slick-carousel-left-{{ instance.id }}'),
+            'nextArrow': $('#slick-carousel-right-{{ instance.id }}'),
+            {% endif %}
+            'autoplay': {% if instance.gallery.autoplay %}true{% else %}false{% endif %},
+            'arrows': {% if instance.gallery.arrows %}true{% else %}false{% endif %},
+            'draggable': {% if instance.gallery.draggable %}true{% else %}false{% endif %},
+            'dots': {% if instance.gallery.dots %}true{% else %}false{% endif %},
+            'fade': {% if instance.gallery.fade %}true{% else %}false{% endif %},
+            'infinite': {% if instance.gallery.infinite %}true{% else %}false{% endif %},
+            'initialSlide': {{ instance.gallery.initial_slide }},
+            'pauseOnFocus': {% if instance.gallery.pause_on_hover %}true{% else %}false{% endif %},
+            'pauseOnHover': {% if instance.gallery.pause_on_hover %}true{% else %}false{% endif %},
+            'autoplaySpeed': {{ instance.gallery.autoplay_speed }},
+        });
+    });
+</script>
+{% endaddtoblock %}
