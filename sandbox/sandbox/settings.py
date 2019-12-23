@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'sekizai',
     'filer',
     'djangocms_text_ckeditor',
+    'modeltranslation',
 ]
 
 MIDDLEWARE = [
