@@ -44,6 +44,8 @@
        }
       .carousel-items > div .slick-slide {
         position: relative; }
+      .carousel-items .slick-slide img{
+        object-fit: cover; }
       .carousel-items > div .carousel-desc {
         height: 100%;
         color: #fff;
