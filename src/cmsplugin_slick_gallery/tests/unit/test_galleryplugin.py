@@ -60,8 +60,6 @@ class SlickGalleryPluginTests(TestCase):
         GalleryImage.objects.create(
             image=test_image, gallery=cls.slick_gallery)
         cls.placeholder = Placeholder.objects.create(slot='test')
-        call_command("makemigrations", interactive=False)
-        call_command("migrate", interactive=False)
         super(SlickGalleryPluginTests, cls).setUpClass()
 
 
