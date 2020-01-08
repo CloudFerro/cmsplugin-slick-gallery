@@ -1,0 +1,31 @@
+site_name: cmsplugin-slick-gallery
+site_description: Gallery plugin for Django CMS using slick.js library
+
+
+site_author: 'CloudFerro'
+site_url: 'https://cloudferro.com'
+
+
+repo_name: 'cmsplugin-slick-gallery'
+repo_url: 'https://github.com/CloudFerro/cmsplugin-slick-gallery'
+edit_uri: '#'
+
+copyright: 'MIT License Copyright (c) 2020 CloudFerro'
+
+theme:
+    name: 'material'
+    favicon: 'favicon.ico'
+    language: 'en'
+    palette:
+      primary: 'teal'
+      accent: 'amber'
+    font:
+      text: 'Roboto'
+      code: 'Roboto Mono'
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
