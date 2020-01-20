@@ -1,7 +1,7 @@
 
 {% load cms_tags sekizai_tags static thumbnail %}
-<section class="carousel" id="slick-carousel-{{ instance.id }}" style="width:{% if instance.gallery.thumbnail_option %}{{ instance.gallery.thumbnail_option.width }}px{% else %}{{ instance.gallery.width }}{{ instance.gallery.width_units }}{% endif %}; 
-                                                                    height:{% if instance.gallery.thumbnail_option %}{{ instance.gallery.thumbnail_option.height }}px{% else %}{{ instance.gallery.height }}{{ instance.gallery.height_units }}{% endif %};">
+<section class="carousel" id="slick-carousel-{{ instance.id }}" style="width:{% if instance.gallery.thumbnail_option %}{{ instance.gallery.thumbnail_option.width }}px{% elif instance.gallery.width %}{{ instance.gallery.width }}{{ instance.gallery.width_units }}{% else %}auto{% endif %}; 
+                                                                    height:{% if instance.gallery.thumbnail_option %}{{ instance.gallery.thumbnail_option.height }}px{% elif instance.gallery.height %}{{ instance.gallery.height }}{{ instance.gallery.height_units }}{% else %}auto{% endif %};">
     {% if instance.gallery.arrows %}<img class="carousel-left" id="slick-carousel-left-{{ instance.id }}" src="{% static 'cmsplugin_slick_gallery/icons/2289-arrow-left.svg' %}" alt="Carousel left"/>{% endif %}
     <div class="carousel-items" id="slick-carousel-items-{{ instance.id }}">
         {% for i in instance.gallery.galleryimage_set.all %}
@@ -17,14 +17,14 @@
                         {% thumbnail i size crop as thumb %}
                     {% endif %}	
                     <div>
-                        <img src="{{ thumb.url }}" alt="Carousel-img"/>
+                        <img src="{{ thumb.url }}" {% if i.alt_text or i.image.default_alt_text %}alt="{% if i.alt_text %}{{ i.alt_text }}{% else %}{{ i.image.default_alt_text }}{% endif %}"{% endif %} />
                         <div class="wrapper carousel-desc flex-wrapper vertical justify-center" style="top: {{ i.text_transform_top }}%; left: {{ i.text_transform_left }}%;">
                             {% if i.text %}{{ i.text }}{% endif %}
                         </div>
                     </div>
                 {% else %}
                 <div>
-                    <img src="{% if i.image %}{{ i.image.url }}{% else %}{{ i.alternative_url }}{% endif %}" alt="Carousel-img"/>
+                    <img src="{% if i.image %}{{ i.image.url }}{% else %}{{ i.alternative_url }}{% endif %}" {% if i.alt_text or i.image.default_alt_text %}alt="{% if i.alt_text %}{{ i.alt_text }}{% else %}{{ i.image.default_alt_text }}{% endif %}"{% endif %} />
                     <div class="wrapper carousel-desc flex-wrapper vertical justify-center" style="top: {{ i.text_transform_top }}%; left: {{ i.text_transform_left }}%;">
                         {% if i.text %}{{ i.text }}{% endif %}
                     </div>
