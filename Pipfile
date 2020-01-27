@@ -4,9 +4,25 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+mkdocs = "*"
+mkdocs-material = "*"
+autopep8 = "*"
+bandit = "*"
+ipython = "*"
+mypy = "*"
+pydoc-markdown = {git = "https://github.com/isylkin/pydoc-markdown.git",ref = "2.1.1"}
+pylint = "*"
+pytest = "*"
+pytest-cov = "*"
+pytest-docker-db = "*"
+pytest-mock = "*"
+rope = "*"
+django-stubs = "*"
+numpy = "*"
 
 [packages]
 cmsplugin-slick-gallery = {path = "."}
+django-modeltranslation = "*"
 
 [requires]
 python_version = "3.7"
