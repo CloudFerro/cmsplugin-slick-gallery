@@ -1,4 +1,4 @@
-from django.utils.translation import ugettext as _
+from django.utils.translation import ugettext_lazy as _
 from cms.models.pluginmodel import CMSPlugin
 from django.db import models
 from filer.fields.image import FilerImageField
