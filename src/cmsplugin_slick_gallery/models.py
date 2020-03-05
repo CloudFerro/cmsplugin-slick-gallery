@@ -48,6 +48,14 @@ class GalleryImage(models.Model):
     text = HTMLField(_("Slide text content"), blank=True, null=True)
     text_transform_left = models.IntegerField(_("Move text from the left"), default=15, blank=False, null=False, help_text=_("(in percents)"))
     text_transform_top = models.IntegerField(_("Move text from the top"), default=0, blank=False, null=False, help_text=_("(in percents)"))
+    ALIGNMENT_CHOICES = (
+        ('center', _("center")),
+        ('left', _("left")),
+        ('right', _("right")),
+        ('bottom', _("bottom")),
+        ('top', _("top")),
+    )
+    alignment = models.CharField(_("image alignment"), max_length=255, choices=ALIGNMENT_CHOICES, default='center')
     alternative_url = models.URLField(_("Alternative image url"), null=True, blank=True, default=None)
     alt_text = models.CharField(_("alt text"), null=True, blank=True, max_length=255)
 

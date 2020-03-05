@@ -23,6 +23,13 @@ numpy = "*"
 [packages]
 cmsplugin-slick-gallery = {path = "."}
 django-modeltranslation = "*"
+<<<<<<< HEAD
+django-filer = ">=1.2.0"
+django-cms = ">=3.4"
+djangocms-text-ckeditor = "*"
+Django = ">=1.11"
+=======
+>>>>>>> c7ebc58a90ec9f35ac5938c39ddfc427f9a6805c
 
 [requires]
 python_version = "3.7"

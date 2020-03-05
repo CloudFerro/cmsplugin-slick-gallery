@@ -2,7 +2,11 @@ from setuptools import setup, find_packages
 
 setup(
     name="cmsplugin-slick-gallery",
+<<<<<<< HEAD
+    version='1.1.5',
+=======
     version='1.1.4',
+>>>>>>> c7ebc58a90ec9f35ac5938c39ddfc427f9a6805c
     url='https://github.com/CloudFerro/cmsplugin-slick-gallery',
     packages=find_packages(where='src'),
     include_package_data=True,

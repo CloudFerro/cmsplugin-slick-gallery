@@ -16,14 +16,22 @@
                         {% thumbnail i size crop as thumb %}
                     {% endif %}	
                     <div>
+<<<<<<< HEAD
+                        <img src="{{ thumb.url }}" {% if i.alt_text or i.image.default_alt_text %}alt="{% if i.alt_text %}{{ i.alt_text }}{% else %}{{ i.image.default_alt_text }}{% endif %}"{% endif %} style="object-position: {{ i.alignment }};" />
+=======
                         <img src="{{ thumb.url }}" {% if i.alt_text or i.image.default_alt_text %}alt="{% if i.alt_text %}{{ i.alt_text }}{% else %}{{ i.image.default_alt_text }}{% endif %}"{% endif %} />
+>>>>>>> c7ebc58a90ec9f35ac5938c39ddfc427f9a6805c
                         <div class="wrapper carousel-desc flex-wrapper vertical justify-center" style="top: {{ i.text_transform_top }}%; left: {{ i.text_transform_left }}%;">
                             {% if i.text %}{{ i.text }}{% endif %}
                         </div>
                     </div>
                 {% else %}
                 <div>
+<<<<<<< HEAD
+                    <img src="{% if i.image %}{{ i.image.url }}{% else %}{{ i.alternative_url }}{% endif %}" {% if i.alt_text or i.image.default_alt_text %}alt="{% if i.alt_text %}{{ i.alt_text }}{% else %}{{ i.image.default_alt_text }}{% endif %}"{% endif %} style="object-position: {{ i.alignment }};" />
+=======
                     <img src="{% if i.image %}{{ i.image.url }}{% else %}{{ i.alternative_url }}{% endif %}" {% if i.alt_text or i.image.default_alt_text %}alt="{% if i.alt_text %}{{ i.alt_text }}{% else %}{{ i.image.default_alt_text }}{% endif %}"{% endif %} />
+>>>>>>> c7ebc58a90ec9f35ac5938c39ddfc427f9a6805c
                     <div class="wrapper carousel-desc flex-wrapper vertical justify-center" style="top: {{ i.text_transform_top }}%; left: {{ i.text_transform_left }}%;">
                         {% if i.text %}{{ i.text }}{% endif %}
                     </div>
@@ -44,12 +52,20 @@
                         {% thumbnail i size crop as thumb %}
                     {% endif %}	
                     <div>
+<<<<<<< HEAD
+                        <img src="{{ thumb.url }}" alt="Carousel-img" style="object-position: {{ i.alignment }};" />
+=======
                         <img src="{{ thumb.url }}" alt="Carousel-img"/>
+>>>>>>> c7ebc58a90ec9f35ac5938c39ddfc427f9a6805c
                         <div class="wrapper carousel-desc flex-wrapper vertical justify-center"></div>
                     </div>
                 {% else %}
                 <div>
+<<<<<<< HEAD
+                    <img src="{{ i.url }}" alt="Carousel-img" style="object-position: {{ i.alignment }};" />
+=======
                     <img src="{{ i.url }}" alt="Carousel-img"/>
+>>>>>>> c7ebc58a90ec9f35ac5938c39ddfc427f9a6805c
                     <div class="wrapper carousel-desc flex-wrapper vertical justify-center"></div>
                 </div>
                 {% endif %}
